@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حساب تكلفة شراء هاتف بالتقسيط</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>حساب تكلفة شراء هاتف بالتقسيط</h1>
+    <button id="toggleDarkMode">تبديل الوضع الداكن</button>
+    <form id="installmentForm">
+      <label for="price">سعر الهاتف (وحدة نقدية):</label>
+      <input type="number" id="price" placeholder="أدخل سعر الهاتف" required>
+
+      <label for="years">عدد سنوات السداد:</label>
+      <input type="number" id="years" placeholder="أدخل عدد السنوات" required>
+
+      <button type="submit">احسب</button>
+    </form>
+    <div class="results">
+      <p id="totalInterest"></p>
+      <p id="totalAmount"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
